@@ -15,3 +15,14 @@
     - Goal is to make discriminator predict correctly which image is fake or not so loss should be going to 0.
     - Goal of Generator - make generators generate images closest to real so D(G(z_i)) value should be approaching 1 hence, minimize loss
 #### Model 2 - Cycle GAN (Generative Adversarial Networks)
+- Designed for unpaired image to image translation.
+- Allows for the transformation of images from one domain to another without requiring paired examples (i.e., a corresponding image in the target domain)
+- Workflow
+    - Have m training examples from Domain X - x_i
+    - Have m training examples from Domain Y - y_i
+    - Compute discriminator loss on real images
+    - Compute discriminator loss on fake images
+    - Update the discriminators
+    - Compute Y->X generator loss
+    - Compute X->Y generator loss
+    - Update the generators
