@@ -14,6 +14,11 @@
     - Minimize the generator loss and update parameters of generator
     - Goal is to make discriminator predict correctly which image is fake or not so loss should be going to 0.
     - Goal of Generator - make generators generate images closest to real so D(G(z_i)) value should be approaching 1 hence, minimize loss
+- Files
+  - `data_loader.py` - loads emoji data
+  - `vanilla_gan.py` - training of DCGAN
+  - `models.py` - all the Generator and Discriminator Convolution model
+  - `vanilla_utils.py` - sample noise and checkpoints
 #### Model 2 - Cycle GAN (Generative Adversarial Networks)
 - Designed for unpaired image to image translation.
 - Allows for the transformation of images from one domain to another without requiring paired examples (i.e., a corresponding image in the target domain)
@@ -23,6 +28,11 @@
     - Compute discriminator loss on real images
     - Compute discriminator loss on fake images
     - Update the discriminators
-    - Compute Y->X generator loss
-    - Compute X->Y generator loss
+    - Compute Y->X generator loss with cycle loss
+    - Compute X->Y generator loss with cycle loss
     - Update the generators
+- Files
+  - `data_loader.py` - loads emoji data
+  - `cycle_gan.py` - training of Cycle GAN
+  - `models.py` - all the Generator and Discriminator Convolution model
+  - `cycle_utils.py` - sample noise and checkpoints
