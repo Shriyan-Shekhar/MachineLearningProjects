@@ -1,6 +1,7 @@
 # Emoji Data
 #### Model 1 - Deep Convolution GAN (Generative Adversarial Networks)
 - Generate Emojis from samples of random noise
+- Input X - Real Emojis, Output: Synthetic images/emojis that resemble the inputted emojis
 - DCGAN is a GAN that uses a convolutional neural network as the discriminator, and a network composed of transposed convolutions as the generator. 
 - Workflow
     - Have m training examples - x_i
