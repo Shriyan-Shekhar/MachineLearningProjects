@@ -1,9 +1,10 @@
-# Alloyed Relative Density Prediction
+# Density Prediction
+Explored a Physics Informed Neural Network on a Materials Science Dataset. Main goal was to predict and not conduct data analysis.
+
 ## Running Instruction
 Run `main.py` and ensure that all imports are resolved (download all relevant libraries in latest version on a virtual environment)
 
 ## Data Merging
-The dataset consists of three main sources: `builds.csv`, `machine_logs.csv`, and `parts.csv`.  
 The `DataAnalyzer` class handles loading and merging these datasets:
 
 - **Builds and Parts:** Joined on `build_id` to associate part-level measurements with build-level metadata.
