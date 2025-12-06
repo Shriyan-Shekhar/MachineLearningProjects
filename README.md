@@ -3,5 +3,5 @@ Applying Various Machine Learning and Deep Learning Architecture to Different Da
 The following folders contain different datasets and different architectures. Some need a VM for training.
 </br> 
 </br>
-Updates constantly as I finish more projects in Machine Learning.
+Updates constantly as I finish more projects in Machine Learning and Deep Learning.
 
